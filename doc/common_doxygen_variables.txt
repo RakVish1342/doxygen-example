@@ -1,0 +1,23 @@
+doxygen Doxyfile ---> create documentation
+"doxygen -g" -- generate default config file
+
+INPUT
+OUTPUT_DIRECTORY
+FILE_PATTERNS
+RECURSIVE
+
+GENERATE_HTML
+
+EXTRACT_PRIVATE
+EXTRACT_STATIC
+EXTRACT_ALL
+
+
+SEARCHENGINE
+
+
+QUIET
+WARNINGS
+WARN_AS_ERROR
+
+///@file OR /** @file */ ---> To recognise non-class standalone global functions.
