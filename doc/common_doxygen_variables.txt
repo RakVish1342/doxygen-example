@@ -12,6 +12,11 @@ EXTRACT_PRIVATE
 EXTRACT_STATIC
 EXTRACT_ALL
 
+// WARNING: doxygen documented symbol was not declared or defined
+// Ensure header files are being detected
+
+ENABLE_PREPROCESSING YES to NO --> sometimes
+ENABLE_PREPROCESSING -= .h=C++ --> sometimes 
 
 SEARCHENGINE
 
@@ -20,4 +25,11 @@ QUIET
 WARNINGS
 WARN_AS_ERROR
 
-///@file OR /** @file */ ---> To recognise non-class standalone global functions.
+
+
+
+>>> ///@file OR /** @file */ ---> To recognise non-class standalone global functions.
+
+>>> Styles of commenting: /** ... */ OR ///
+
+>>> General/broad comments and parameter definitions of class, namespace, function should be added in the header files. Other internal comments to understand can be added in the cpp file.
